@@ -2,6 +2,8 @@ import chalk from "chalk";
 
 export const minutes = (n: number) => n * 60 * 1000;
 
+export const seconds = (n: number) => n * 1000;
+
 export class Log {
   static info(msg: string) {
     Log.log(msg, chalk.yellow);

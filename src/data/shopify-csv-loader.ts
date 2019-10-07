@@ -1,7 +1,8 @@
-import { App, Category, KeyBenefit, PricingPlan, Review } from "./shopify-types";
+import { App, Category, KeyBenefit, PricingPlan, Review, AppCategory } from "./shopify-types";
 import csv from "csvtojson";
 import { resolve } from "path";
 import _ from "lodash";
+import { link } from "fs";
 
 const DATA_DIR = resolve(__dirname, "../../_data");
 
@@ -51,7 +52,14 @@ const toReview = (line: any) => {
         dateCreated: line.posted_at,
         developerReply: line.developer_reply.replace(/\s/g, " "),
         developerReplyDate: line.developer_reply_posted_at
-    }
+    } as Review;
+}
+
+const toAppCategory = (line: any) => {
+    return {
+        shopifyAppId: parseInt(line.app_id),
+        categoryId: parseInt(line.category_id)
+    } as AppCategory;
 }
 
 let apps: App[] = [];
@@ -59,6 +67,7 @@ let categories: Category[] = [];
 let keyBenefits: KeyBenefit[] = [];
 let pricingPlans: PricingPlan[] = [];
 let reviews: Review[] = [];
+let appCategories: AppCategory[] = [];
 
 export class ShopifyCsvLoader {
 
@@ -68,6 +77,7 @@ export class ShopifyCsvLoader {
         await this.keyBenefits();
         await this.pricingPlans();
         await this.reviews();
+        await this.appCategories();
     }
 
     static async loadApps(filePath: string): Promise<App[]> {
@@ -90,6 +100,17 @@ export class ShopifyCsvLoader {
             return categories;
         }
         return this.loadCategories(DATA_DIR + "/categories.csv");
+    }
+
+    static async loadAppCategories(filePath: string): Promise<AppCategory[]>{
+        return csv().fromFile(filePath).then(items => items.map(toAppCategory));
+    }
+
+    static async appCategories(): Promise<AppCategory[]> {
+        if (appCategories.length > 0) {
+            return appCategories;
+        }
+        return this.loadAppCategories(DATA_DIR + "/apps_categories.csv")
     }
 
     static async loadKeyBenefits(filePath: string): Promise<KeyBenefit[]> {
@@ -130,4 +151,6 @@ export class ShopifyCsvLoader {
         }
         return this.loadReviews(DATA_DIR + "/reviews.csv");
     }
+
+
 };

@@ -92,8 +92,7 @@ CREATE TABLE reviews(
     date_created text not null,
     developer_reply text,
     developer_reply_date text,
-    primary key (app_id, author),
-    CONSTRAINT fk_apps
+        CONSTRAINT fk_apps
       FOREIGN KEY (app_id)
       REFERENCES apps(id)
 );
@@ -114,7 +113,7 @@ CREATE UNIQUE INDEX apps_id_unq_idx
  ON apps (id)
 `;
 
-describe("Tables", () => {
+describe("Create Tables", () => {
     let db: Database;
 
     beforeAll(async () => (db = await Database.fromExisting("00", "01")));
@@ -275,8 +274,8 @@ describe("Tables", () => {
 
         const reviews = (await selectTableInfo(REVIEWS)).map(mapFn);
         expect(reviews).toEqual([
-            { name: "app_id", primaryKey: true },
-            { name: "author", primaryKey: true },
+            { name: "app_id", primaryKey: false },
+            { name: "author", primaryKey: false },
             { name: "body", primaryKey: false },
             { name: "rating", primaryKey: false },
             { name: "helpful_count", primaryKey: false },
@@ -373,7 +372,7 @@ describe("Tables", () => {
         const reviews = (await selectIndexList(REVIEWS)).map(mapFn);
         expect(reviews).toEqual([
             { name: "reviews_author_idx", unique: false },
-            { name: "sqlite_autoindex_reviews_1", unique: true }
+            //{ name: "sqlite_autoindex_reviews_1", unique: true }
         ]);
         done();
     });

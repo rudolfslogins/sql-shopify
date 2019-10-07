@@ -16,6 +16,11 @@ export interface Category {
     title: string;
 }
 
+export interface AppCategory {
+    shopifyAppId: number;
+    categoryId: number;
+}
+
 export interface KeyBenefit {
     shopifyAppId: number;
     title: string;
@@ -24,6 +29,11 @@ export interface KeyBenefit {
 
 export interface PricingPlan {
     shopifyAppId: number;
+    price: string;
+}
+
+export interface PricingPlanPrice {
+    id: number;
     price: string;
 }
 

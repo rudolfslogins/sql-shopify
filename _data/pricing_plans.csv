@@ -774,8 +774,6 @@ id,app_id,title,price
 773,491,Business,$69/month
 774,492,Small,$10/month
 775,492,Medium,$20/month
-776,492,Large,$30/month
-777,492,Custom,$30/month
 778,493,,Free to install
 779,494,Standard,Free
 780,494,Premium,$11.99/month
@@ -903,8 +901,6 @@ id,app_id,title,price
 902,546,"5,000 Subscribers",$33/month
 903,546,"10,000 Subscribers",$165/month
 904,547,Premium,$9.99/month
-905,547,Customer Pricing,$19.99/month
-906,547,Supple Wholesale,$19.99/month
 907,548,Free plan,Free
 908,548,Basic plan,$19/month
 909,548,Pro plan,$49/month
@@ -1209,8 +1205,6 @@ id,app_id,title,price
 1208,697,Pickup or Delivery,$29/month
 1209,697,Pickup + Delivery,$35/month
 1210,697,Everything,$49/month
-1211,698,Store pickup plan,$18.99/month
-1212,698,Delivery plan,$18.99/month
 1213,698,Ultimate Plan,$34.99/month
 1214,699,Basic plan,$3/month
 1215,700,,Free to install
@@ -1234,8 +1228,6 @@ id,app_id,title,price
 1233,710,Small Business,$249/month
 1234,710,Business,$699/month
 1235,711,Basic,$14.99/month
-1236,711,PRO,$19.99/month
-1237,711,Business,$19.99/month
 1238,712,Standard,$20/month
 1239,712,Premium,$40/month
 1240,712,Yearly,$25/month
@@ -1643,9 +1635,7 @@ id,app_id,title,price
 1642,893,Small,$14.99/month
 1643,893,Medium,$24.99/month
 1644,894,Gratuito,Free
-1645,894,BÃ¡sico,$4.99/month
-1646,894,AvanÃ§ado,$9.98/month
-1647,894,+ Transportadoras,$4.99/month
+1646,894,Avan?§ado,$9.98/month
 1648,895,Free,Free
 1649,895,Basic,$40/month
 1650,895,Advanced,$25/month
@@ -1989,8 +1979,6 @@ id,app_id,title,price
 1988,1075,,$4.99/month
 1989,1076,All Features,$12.95/month
 1990,1077,Basic Plan,Free
-1991,1077,Communicator Plan,$15/month
-1992,1077,Automation Plan,$15/month
 1993,1078,,$5.99/month
 1994,1079,Paid Plan,$4.99/month
 1995,1080,,$1.99/month
@@ -2610,8 +2598,6 @@ id,app_id,title,price
 2609,1420,Enterprise,Free to install
 2610,1421,,Free to install
 2611,1422,,Free
-2612,1423,Basic,$5.90/month
-2613,1423,Pro,$5.90/month
 2614,1424,,$14.95/month
 2615,1425,,$5.99/month
 2616,1426,,Free
@@ -2924,10 +2910,6 @@ id,app_id,title,price
 2923,1603,Bronze plan,$14.99/month
 2924,1603,Silver plan,$19.99/month
 2925,1603,Gold plan,$29.99/month
-2926,1604,Fakturoid free,$5/month
-2927,1604,Fakturoid Solo,$5/month
-2928,1604,Solo +,$5/month
-2929,1604,Firma,$5/month
 2930,1605,,$5/month
 2931,1606,Manual,Free to install
 2932,1606,AUTO-OPTIMIZATION,$4/month
@@ -2962,8 +2944,6 @@ id,app_id,title,price
 2961,1626,,$5.99/month
 2962,1627,,Free
 2963,1628,,$7.49/month
-2964,1629,Standard,$4/month
-2965,1629,Premium,$4/month
 2966,1630,Standard,$6.99/month
 2967,1630,Professional,$18.99/month
 2968,1630,Plus,$38.99/month
@@ -3205,8 +3185,6 @@ id,app_id,title,price
 3204,1779,,Free
 3205,1780,,Free to install
 3206,1781,,$10/month
-3207,1782,Widgets,$29/month
-3208,1782,Personalization,$29/month
 3209,1782,Full,$46/month
 3210,1782,Full Plus,$94/month
 3211,1783,Lite,Free
@@ -3337,8 +3315,6 @@ id,app_id,title,price
 3336,1860,PLUS 20,$50/month
 3337,1860,PLUS 50,$80/month
 3338,1860,PLUS 100,$130/month
-3339,1861,Monthly,$49/month
-3340,1861,Annual,$49/month
 3341,1862,eCommerce Pro,$19/month
 3342,1863,Helpful,Free
 3343,1863,Handful,$9.95/month
@@ -3761,8 +3737,6 @@ id,app_id,title,price
 3760,2128,Freemium Plan,Free to install
 3761,2128,Premium Plan,$25/month
 3762,2129,,Free
-3763,2130,Tag 100 products,$10/month
-3764,2130,Tag all products,$10/month
 3765,2131,Basic,$4/month
 3766,2132,Lite Plan,Free
 3767,2132,Growth Plan,$49/month
@@ -3875,8 +3849,6 @@ id,app_id,title,price
 3874,2191,Business,$39/month
 3875,2191,Pro,$99/month
 3876,2191,Extreme,$199/month
-3877,2192,Shipping labels,$20/month
-3878,2192,Pickup points,$20/month
 3879,2193,,$12/month
 3880,2194,,Free
 3881,2195,,$4/month
@@ -3942,8 +3914,6 @@ id,app_id,title,price
 3941,2229,,Free
 3942,2230,Ecommerce,$49/month
 3943,2231,All in one,$1.99/month
-3944,2232,Native Android App,$19/month
-3945,2232,Native iPhone App,$19/month
 3946,2232,Native IOS+Android,$35/month
 3947,2233,,$5/month
 3948,2234,Free,Free
@@ -4161,9 +4131,9 @@ id,app_id,title,price
 4160,2361,Growth Plan,$9/month
 4161,2361,Scale Plan,$24/month
 4162,2362,,Free to install
-4163,2363,ã‚¹ãƒ¢ãƒ¼ãƒ«,$29/month
-4164,2363,ãƒŸãƒ‡ã‚£ã‚¢ãƒ ,$59/month
-4165,2363,ãƒ©ãƒ¼ã‚¸,$119/month
+4163,2363,?‚¹?ƒ¢?ƒ¼?ƒ«,$29/month
+4164,2363,?ƒŸ?ƒ‡?‚£?‚¢?ƒ ,$59/month
+4165,2363,?ƒ©?ƒ¼?‚ø,$119/month
 4166,2364,,Free
 4167,2365,,Free
 4168,2366,,$8.99/month
@@ -4264,7 +4234,7 @@ id,app_id,title,price
 4263,2425,,Free
 4264,2426,,Free to install
 4265,2427,,Free
-4266,2428,Plan estÃ¡ndar,$2/month
+4266,2428,Plan est??ndar,$2/month
 4267,2429,Unlimited,$119/month
 4268,2430,UNLIMITED PLAN,$9.99/month
 4269,2431,Free plan,Free
@@ -4586,8 +4556,6 @@ id,app_id,title,price
 4585,2628,,Free
 4586,2629,,Free
 4587,2630,,$4.99/month
-4588,2631,Professional,$25/month
-4589,2631,Communications,$25/month
 4590,2631,Basic,Free
 4591,2632,,$5.99/month
 4592,2633,,$10/month
@@ -4705,7 +4673,7 @@ id,app_id,title,price
 4704,2695,Basic Plan,$4.99/month
 4705,2695,Pro Plan,$7.99/month
 4706,2695,Premium,$12.99/month
-4707,2696,ãƒŽãƒ¼ãƒžãƒ«,$9.80/month
+4707,2696,?ƒ??ƒ¼?ƒ??ƒ«,$9.80/month
 4708,2697,,$7.99/month
 4709,2698,,Free
 4710,2699,Business Starter,$19/month

@@ -118,4 +118,16 @@ describe("shopify csv loader", () => {
         ]);
         done();
     });
+
+    it("should load app categories", async done => {
+        const filePath = resolve(__dirname, "./apps_categories-short.csv");
+        const appCategories = await ShopifyCsvLoader.loadAppCategories(filePath);
+        expect(appCategories).toEqual([
+            { shopifyAppId: 1,categoryId: 1 },
+            { shopifyAppId: 1,categoryId: 2 },
+            { shopifyAppId: 2,categoryId: 1 },
+            { shopifyAppId: 3,categoryId: 3 }
+        ]);
+        done();
+    });
 })
